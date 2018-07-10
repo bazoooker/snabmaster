@@ -122,6 +122,9 @@ $(document).ready(function(){
         autoplay: {
             delay: 4000,
         },
+        pagination: {
+            el: '.swiper-pagination',
+          },
 
     });
 

@@ -18,9 +18,10 @@
 }
 
 .page-header__content {
-	padding: 3.1rem 0;
+	padding: 3.1rem 0 5.5rem 0;
 
 	.container {
+		position: relative;
 		@include flex-row(nowrap, space-between,center);
 	}
 }

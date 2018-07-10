@@ -1,0 +1,34 @@
+.nav-left {
+    position: absolute;
+
+    width: 24%;
+    left: 4rem;
+    top: 10.6rem;
+
+    padding-bottom: 9rem;
+
+
+    background-image: url(/img/bg/bg-leftmenu.png);
+    @include bg-cover;
+
+
+    // border: 5px solid red;
+    z-index: 3;
+}
+
+.nav-left__heading {
+    position: relative;
+
+	padding: 1.6rem 1rem 1.6rem 2.8rem;
+
+	color: #fff;
+	background-color: #2d2d2d;
+
+    cursor: pointer;
+
+    // &:hover .btn-burger__bar::after {
+    //     width: 100%;
+    // }
+
+
+}
