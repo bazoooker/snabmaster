@@ -30,6 +30,10 @@
 
 			transition: 500ms;
 		}
+
+			&:hover:after {
+				transform: translateY(-3px);
+			}
 	}
 }
 
@@ -49,9 +53,10 @@
 	background-image: url(/img/logo_no-roof.jpg); 
 	@include bg-contain;
 
-	// &:hover:after {
-	// 	animation: anim-logo .3s ease;
-	// }
+	&:hover:after {
+		// animation: anim-logo .3s ease;
+		transform: translateY(-3px);
+	}
 	
 	&:after {
 		@include pseudo;

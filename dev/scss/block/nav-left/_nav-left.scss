@@ -26,9 +26,9 @@
 
     cursor: pointer;
 
-    // &:hover .btn-burger__bar::after {
-    //     width: 100%;
-    // }
+    &:hover .btn-burger__bar::after {
+        width: 100%;
+    }
 
 
 }

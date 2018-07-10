@@ -2,6 +2,7 @@
 	@include flex-row(nowrap, flex-start, center);
 	z-index: 2;
 	a {
+		position: relative;
 		margin: 0 0 0 0;
 		padding: 1.2rem .9rem;
 
@@ -17,8 +18,43 @@
 			margin-right: 0;
 		}
 
-		// &:hover {
-		// 	background-color: gainsboro;
+		// &:before  {
+		// 	@include pseudo;
+		// 	left: .6rem;
+		// 	top: 50%;
+		// 	transform: translateY(-50%);
+		// 	background-size: 17px;
+		// 	background-repeat: no-repeat;
+		// 	background-position: 50% 50%;
+		// 	@include bg-contain;
+
+		// 	transition: $tr;
+		// }
+
+		&::after {
+			@include pseudo;
+			width: 100%;
+			height: 2px;
+			left: 0;
+			bottom: -.2rem;
+			background-color: $color_font;
+			opacity: 0;
+
+			transform: translateY(-4px);
+			transition: $tr;
+		}
+
+		&:hover {
+			color: $color_main;
+		}
+		
+		// &:hover::before {
+		// 	transform: translateY(-60%);
+		// }
+
+		// &:hover::after {
+		// 	opacity: .15;
+		// 	transform: translateY(0);
 		// }
 		&.active {
 			font-weight: 600;

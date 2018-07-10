@@ -41,29 +41,29 @@
 		transition: $tr;
 	}
 
-	// &::after {
-	// 	@include pseudo;
-	// 	width: 100%;
-	// 	height: 2px;
-	// 	left: 0;
-	// 	bottom: -.2rem;
-	// 	background-color: $color_font;
-	// 	opacity: 0;
+	&::after {
+		@include pseudo;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		bottom: -.2rem;
+		background-color: $color_font;
+		opacity: 0;
 
-	// 	transform: translateY(-4px);
-	// 	transition: $tr;
-	// }
+		transform: translateY(-4px);
+		transition: $tr;
+	}
 
-	// &:hover {
-	// 	color: $color_main;
-	// }
+	&:hover {
+		color: $color_main;
+	}
 	
-	// &:hover::before {
-	// 	animation: anim-updown .4s;
-	// }
+	&:hover::before {
+		transform: translateY(-60%);
+	}
 
 	// &:hover::after {
-	// 	opacity: .5;
+	// 	opacity: .15;
 	// 	transform: translateY(0);
 	// }
 }

@@ -28,6 +28,8 @@
 
 	line-height: 1.8rem;
 
+	transition: $tr;
+
 
 	&:visited {color: $color_main;}
 	&:active {color: $color_main;}
@@ -51,7 +53,22 @@
 		background-size: 1.7rem;
 		background-repeat: no-repeat;
 		background-position: 40% 50%;
+
+		transition: $tr;
 	}
+
+	&:hover::after {
+		transform: scale(1.2);
+	}
+
+	// &:hover::before {
+	// 	background-color: #fff;
+	// }
+	// &:hover::after {
+	// 	background-color: #fff;
+	// 	background-image: url(/img/icons/i-cart_orange.png);
+	// 	background-position: 70% 50%;
+	// }
 }
 
 .btn_one-click {
@@ -62,6 +79,7 @@
 	padding: 1rem 1rem 1rem 1rem;
 	border: 2px solid transparent;
 	line-height: 1.8rem;
+	transition: $tr;
 
 
 	span {
@@ -71,6 +89,7 @@
 		font-weight: 600;
 		text-transform: uppercase;
 		color: #514f53;
+		transition: $tr;
 
 		&::before {
 			@include pseudo;
@@ -83,6 +102,16 @@
 		}
 	}
 
+	&:hover span::before {
+		display: none;
+	}
+	&:hover span {
+		color: #000;
+	}
+	&:hover {
+		background-color: #eaeaea;
+	}
+
 }
 
 
@@ -91,9 +120,16 @@
 	border: 2px solid #e3e3e3;
 	color: $color_font;
 
+	transition: $tr;
+
 	&:visited,
 	&:active {
 		color: gray;
+	}
+
+	&:hover {
+		background-color: #e3e3e3;
+		color: #3e3d3d;
 	}
 
 }

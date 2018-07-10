@@ -7,10 +7,32 @@
 }
 
 .product__img {
+	position: relative;
 	display: block;
 	height: 20rem;
 	width: 100%;
 	@include bg-contain;
+	margin: 0 0 1rem 0;
+
+	&:hover::after {
+		height: 100%;
+	}
+
+	&::after {
+		@include pseudo;
+		width: 100%;
+		height: 0%;
+		left: 0;
+		top: 0;
+		background-color: rgba(0,0,0,.5);
+		background-image: url(/img/icons/i-search.png);
+		background-size: 2.5rem;
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		transition: $tr;
+
+
+	}
 
 }
 .product__name {
@@ -29,8 +51,8 @@
 }
 .product__params {
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: 1rem;
+	right: 1.3rem;
 	width: 80px;
 	// height: 7.6rem;
 
