@@ -35,6 +35,10 @@
 				transform: translateY(-3px);
 			}
 	}
+
+	&.logo_static {
+		background-image: url(/img/logo.jpg); 
+	}
 }
 
 

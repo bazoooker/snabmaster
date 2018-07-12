@@ -154,6 +154,7 @@ $(document).ready(function(){
         // autoplay: {
         //     delay: 3000,
         // },
+        spaceBetween: 20,
         slidesPerView: 4,
         navigation: {
             nextEl: '.products-slider-btn-next',
@@ -415,14 +416,18 @@ $(document).ready(function () {
 
 
     // DROPDOWN
-    $('.nav-main__links > li').hover(function() {
-        // console.log('hover');
-        $(this).find('.dropdown-nav').fadeIn(200);
+    $('.dropdown').hover(function() {
+        $(this).find('.dropdown__nav').fadeIn(0);
+        $(this).addClass('active');
     });
 
-    $('.nav-main__links > li').mouseleave(function() {
-        $('.dropdown-nav').fadeOut(200);
+    $('.dropdown').mouseleave(function() {
+        $('.dropdown__nav').fadeOut(0);
+        $(this).removeClass('active');
     });
+
+
+
 
     // WOW
     new WOW().init();
@@ -490,12 +495,12 @@ function moveProgress() {
 function showStickyHeader() {
 
 
-    if ( window.pageYOffset > 0 ) {
-       $('.page-header').addClass('page-header_sticky');
+    if ( window.pageYOffset > 200 ) {
+       $('.sticky-header').fadeIn(200);
     }
     else {
         console.log('less than 700')
-        $('.page-header').removeClass('page-header_sticky');
+        $('.sticky-header').fadeOut(200);
     }
 };
 
@@ -515,7 +520,18 @@ function scrollToTop() {
   $("html, body").animate({ scrollTop: 0 }, "slow");
   return false;
 }; 
-    
+
+function opeFilterCategory() {
+    if( $(this).parent().hasClass('filter-category_opened') ) {
+        $(this).parent().find('.filter-category__content').slideUp(200);        
+        $(this).parent().removeClass('filter-category_opened');        
+    } else {
+        $(this).parent().find('.filter-category__content').slideDown(200);        
+        $(this).parent().addClass('filter-category_opened');        
+    }
+  
+}; 
+    // .filter-category__name
 
 
 
@@ -579,8 +595,10 @@ $(document).ready(function() {
     $('.js-overlay').click(showTags);
     $('.js-slide-tagcontainer').click(showTags);
 
+    $('.filter-category__name').click(opeFilterCategory);
 
-    // $(window).scroll(showStickyHeader);  
+
+    $(window).scroll(showStickyHeader);  
     $(window).scroll(showToTopButton);    
     $(window).scroll(moveProgress);    
 });

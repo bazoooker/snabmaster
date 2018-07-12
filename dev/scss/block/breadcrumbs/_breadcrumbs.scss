@@ -1,26 +1,38 @@
 .breadcrumbs {
 	display: inline-block;
-	background-color: #fff;
-	padding: .6rem 1.5rem .6rem 1.8rem;
+	background-color: transparent;
+	padding: .6rem 1.5rem .6rem 0;
 	border-radius: 6px;
 	z-index: 2;
 }
 .breadcrumbs__item {
 	position: relative;
 	display: inline-block;
-	font-size: 1.2rem;
-	color: gray;
-	margin: 0 .5rem 0 0;
-	padding: .5rem;
+	font-size: 1.4rem;
+	color: #b2b2b2;
+	margin: 0 .8rem 0 0;
+	padding: .8rem;
 	text-decoration: none;
+	transition: $tr;
 
 	&:after {
 		position: absolute;
-		content: '/';
-		right: -.7rem;
+		content: '';
+		right: -.8rem;
 		top: 50%;
 
+		width: .7rem;
+		height: .7rem;
+
+		background-image: url(/img//icons/i-octagon_disabled.png);
+		@include bg-contain;
+
+
 		transform: translateY(-50%);
+	}
+
+	&:first-child {
+		padding-left: 0;
 	}
 
 	&:last-child:after {
@@ -28,7 +40,6 @@
 	}
 
 	&:hover {
-		color: $color_main-r;
-		text-decoration: underline;
+		color: #49474b;
 	}
 }

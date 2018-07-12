@@ -2,8 +2,8 @@
 	display: inline-block;
 	position: relative;	
 	overflow: hidden;
-	font-size: 1.2rem;
-	line-height: 132%;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
 	text-decoration: none;
 	font-weight: 600;
 	// background-color: $color_main-b;
@@ -11,7 +11,7 @@
 	cursor: pointer;
 	
 	&:visited {
-
+	
 	}
 
 }
@@ -21,12 +21,12 @@
 	flex: 1 1 50%;
 	text-align: center;
 	border: 2px solid $color_main;
-	padding: 1rem 1rem 1rem 4.7rem;
+	padding: .8rem .8rem .8rem 4.5rem;
 	
 	text-transform: uppercase;
 	color: $color_main;
 
-	line-height: 1.8rem;
+	line-height: 2.2rem;
 
 	transition: $tr;
 
@@ -73,16 +73,25 @@
 
 .btn_one-click {
 	flex: 1 1 50%;
+
 	@include flex-row(nowrap, flex-start, center);
 	background-color: transparent;
 
-	padding: 1rem 1rem 1rem 1rem;
+	padding: .8rem .8rem .8rem .8rem;
 	border: 2px solid transparent;
 	line-height: 1.8rem;
 	transition: $tr;
 
+	font-size: 1.1rem;
+	text-transform: uppercase;
+
+	&:visited span {color: #514f53;}
+	&:active span {color: #514f53;}
+
 
 	span {
+		display: inline-block;
+		margin: 0 auto;
 		position: relative;
 
 		font-size: 1.2rem;
@@ -90,6 +99,8 @@
 		text-transform: uppercase;
 		color: #514f53;
 		transition: $tr;
+
+
 
 		&::before {
 			@include pseudo;
@@ -124,7 +135,7 @@
 
 	&:visited,
 	&:active {
-		color: gray;
+		color: $color_font;
 	}
 
 	&:hover {
@@ -174,6 +185,35 @@
     	height: 100%;
     	background-color: #fff;
     	z-index: 4;
+
+    	transition: $tr;
+    }
+}
+
+.btn_metal {
+	position: relative;
+    background-image: url(/img/bg/bg-btn.jpg);
+    padding: 1rem 3.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+    font-weight: 400;
+
+    &:visited,
+	&:active {
+		color: #fff;
+	}
+
+    &:hover::after {
+    	height: 100%;
+    }
+
+    &::after {
+    	@include pseudo;
+    	left: 0;
+    	top: 0;
+    	width: 100%;
+    	height: 0%;
+    	background-color: rgba(255,255,255,.3);
 
     	transition: $tr;
     }

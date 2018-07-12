@@ -16,6 +16,9 @@
 @import "block/page-template/page-wrapper";
 @import "block/page-template/page-content";
 @import "block/inner-page-header/inner-page-header";
+@import "block/sidebar/sidebar";
+
+@import "block/sticky-header/sticky-header";
 
 @import "block/page-template/container";
 @import "block/inner-page/inner-page";
@@ -36,11 +39,20 @@
 
 @import "block/btn/btn";
 
+// dropdown
+@import "block/dropdown/dropdown";
+
 // photo
 // @import "block/photo/photo";f
 
 // icons
 @import "block/icons/icons";
+
+// filters
+@import "block/filters/filters";
+@import "block/fancy-checkbox/fancy-checkbox";
+@import "block/filter-category/filter-category";
+
 
 
 // footer
@@ -77,10 +89,14 @@
 @import "block/product-list/product-list";
 @import "block/product/product";
 @import "block/products/products";
+@import "block/product-list-controls/product-list-controls";
 @import "block/quantity-counter/quantity-counter";
 
 // product-detail
 @import "block/product-detail/product-detail";
+@import "block/product-detail-heading/product-detail-heading.scss";
+
+@import "block/product-logo/product-logo";
 
 // features
 @import "block/feature/feature";
@@ -88,16 +104,24 @@
 
 
 @import "block/breadcrumbs/breadcrumbs";
+@import "block/sort/sort";
 
 // nice select
-@import "block/brand-select/brand-select";
-@import "nice-select/nice-select-prefixed";
+// @import "block/brand-select/brand-select";
+// @import "nice-select/nice-select-prefixed";
 
 // tabs
 // @import "block/tabs/section-tabs";
 
 // legal
 @import "block/legal/legal";
+
+
+@import "block/ad/ad";
+
+// pagination
+@import "block/pagination/pagination";
+
 
 
 // menu

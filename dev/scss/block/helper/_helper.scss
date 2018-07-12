@@ -7,6 +7,9 @@
 .bg-gray {
 	background-color: #eee;
 }
+.bg-gray-grad {
+	background-image: linear-gradient(to right, #E8E7E8 0%, #FFFFFF 50%, #E8E7E8 100%);
+}
 .full-width {
 	width: 100%;
 }
@@ -27,8 +30,15 @@
 }
 
 .offset-25 {
-	margin-left: 25%;
-	padding-left: 6rem;
+	margin-left: 24%;
+	padding-left: 3rem;
+}
+
+.bg-top-shadow {
+	background-image: url(/img/bg/bg-section-shadow.png);
+	background-position: top center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 
 .fancy-list {
