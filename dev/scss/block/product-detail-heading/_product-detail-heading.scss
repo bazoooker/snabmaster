@@ -23,3 +23,42 @@
 	border: 2px solid #ececec;
 }
 
+@media screen and (max-width: 1200px) {
+	.product-detail-heading__logo {
+		flex: 0 0 12rem;
+		height: 12rem;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.product-detail-heading {
+		@include flex-row(wrap, center, center);
+
+		&__main-info {
+			flex: 1 1 100%;
+			margin: 0 0 2.5rem 0;
+		}
+		&__controls {
+			@include flex-row(nowrap, flex-start, stretch);
+		}
+		&__logo {
+			height: 5rem;
+			flex: 1 1 100%;
+			.product-logo {
+				height: 50%;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.product-detail-heading {
+		.product-detail-heaading__price {
+			text-align: center;
+		}
+		&__controls {
+			justify-content: center;
+			margin: 0 0 4rem 0;
+		}
+	}
+}

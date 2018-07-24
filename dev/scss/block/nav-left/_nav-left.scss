@@ -44,3 +44,10 @@
 .nav-left_small {
     padding-bottom: 0;
 }
+
+
+@media screen and (max-width: 992px) {
+    .nav-left {
+        display: none;
+    }
+}

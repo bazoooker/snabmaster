@@ -27,6 +27,7 @@
 	z-index: 2;
 	min-width: 30rem;
 	margin: 0 10rem 6rem 0;
+	text-decoration: none;
 
 	p {
 		color: #fff;
@@ -52,4 +53,24 @@
 .hero__offer2 {
 	font-size: 4.8rem;
 			font-weight: 900;
+}
+
+@media screen and (max-width: 992px) {
+	.hero__cta {
+		width: 100%;
+		text-align: center;
+		margin: 0 0 3rem 0;
+	}
+	
+	.hero__slide {
+		.container::after {
+			right: 0;
+			background-size: 95rem;
+			background-position: 51.5% 60%;
+		}
+	}
+
+	.hero__cta {
+		min-width: 20rem;
+	}
 }

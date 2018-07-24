@@ -20,3 +20,17 @@
 		font-weight: 300;
 	}
 }
+
+@media screen and (max-width: 1024px) {
+
+	.legal {
+		.container {
+			@include flex-row(wrap, center, center);			
+		}
+	}
+	.legal__policy {
+		flex: 1 1 100%;
+		margin: 0 0 3rem 0;
+		text-align: center;
+	}
+}

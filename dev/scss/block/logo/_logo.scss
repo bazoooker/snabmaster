@@ -45,7 +45,7 @@
 .logo.animated {
 	position: relative;
 	display: inline-block;
-	flex: 0 1 27.3rem;
+	flex: 0 0 27.3rem;
 	height: 7.5rem;
 	margin: 0 3rem 0 0;
 	text-decoration: none;
@@ -80,3 +80,17 @@
 
 
 
+
+@media screen and (max-width: 992px) {
+	 .logo.animated {
+	 	background-image: url(/img/logo.jpg);
+	 	flex: 1 1 27.3rem;
+	 	&:hover {
+	 		opacity: .85;
+	 	}
+
+	 	&::after {
+	 		display: none;
+	 	}
+	 }
+}

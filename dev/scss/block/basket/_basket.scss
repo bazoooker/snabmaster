@@ -1,6 +1,7 @@
 .basket {
 	position: relative;
 	height: 100%;
+	flex: 1 0 16rem;
 	cursor: pointer;
 
 	@include flex-row(nowrap, space-between, center);

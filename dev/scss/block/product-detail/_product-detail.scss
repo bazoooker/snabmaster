@@ -4,6 +4,7 @@
 
 .product-detail__left {
 	flex: 1 1 45%;
+	margin: 0 5rem 0 0;
 }
 .product-detail__right {
 	flex: 1 1 45%;
@@ -28,6 +29,39 @@
 
 	table {
 
+	}
+
+}
+
+@media screen and (max-width: 768px) {
+	.product-detail {
+    	@include flex-row(wrap,space-between, flex-start);
+
+    	&__left {
+    		margin: 0 0 0 0;
+    	}
+
+    	&__left,
+    	&__right {
+    		flex: 1 1 100%;
+    	}
+
+    	&__img {
+    		height: 24rem;
+    	}
+
+    	.product_fake {
+    		display: none;
+    	}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.product-detail__table {
+		td {
+			font-size: 1.3rem;
+			padding: .5rem 0;
+		}
 	}
 
 }

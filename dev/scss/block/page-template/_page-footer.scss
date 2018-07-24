@@ -54,17 +54,41 @@
 
 
 @media screen and (max-width: 960px) {
-
-}
-
-@media screen and (max-width: 850px) {
-
-}
-
-@media screen and (max-width: 768px) {
-
+	.page-footer {
+		.nav {
+			display: none;
+		}
+	}
 }
 
 @media screen and (max-width: 568px) {
+	.page-footer {
+		.container {
+			@include flex-row(wrap, center, center);
+		}
 
+		.logo.logo_filled {
+			flex: 1 1 100%;
+			justify-content: center;
+			margin: 0 0 2rem 0;
+			background-image: url(/img/logo-filled.png);
+			&::after {
+				display: none;
+			}
+		}
+
+		.company-info {
+			flex: 1 1 100%;
+			justify-content: center;
+
+			.location {
+				text-align: center;
+				margin: 0;
+			}
+			.phone {
+				padding: 0;
+			}
+		}
+
+	}
 }

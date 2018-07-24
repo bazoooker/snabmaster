@@ -15,6 +15,14 @@
 	.container {
 		@include flex-row(nowrap,space-between,center);
 	}
+
+	.btn-burger {
+		display: none;
+
+		.btn-burger__bar {
+			background-color: black;
+		}
+	}
 }
 
 .page-header__content {
@@ -24,4 +32,87 @@
 		position: relative;
 		@include flex-row(nowrap, space-between,center);
 	}
+}
+
+@media screen and (max-width: 1200px) {
+	.page-header__top-bar {
+		.btn-burger {
+			display: flex;
+			cursor: pointer;
+
+			&:hover {
+				.btn-burger__burger-bar {
+					&:after {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.page-header__top-bar {
+		.user-options {
+			display: none;
+		}
+	}
+
+
+	.page-header__top-bar {
+
+		.container {
+			@include flex-row(nowrap,center,center);
+			height: 4rem;
+		}
+	}
+}
+
+@media screen and (max-width: 699px) {
+	.page-header__content {
+		.container {
+			@include flex-row(wrap, center, center);
+			.logo.animated {
+				flex: 1 1 100%;
+				height: 6rem;
+				margin: 0 0 1rem 0;
+			}
+			.company-info {
+				flex: 1 1 100%;
+				margin: 0 0 1rem 0;
+
+				.location {
+					text-align: center;
+					margin: 0 0 0 0;
+				}
+
+				.phone {
+					flex: 1 1 100%;
+					text-align: center;
+					margin: 0 0 1rem 0;
+					padding: 0 0 0 0;
+				}
+			}
+			.basket {
+				flex: 0 0 18rem;
+				margin: 0 0 2rem 0;
+				text-align: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.page-header__top-bar {
+		.nav  {
+			display: none;
+		}
+
+		.container {
+			@include flex-row(nowrap,center,center);
+		}
+
+		.btn-burger {
+			margin: 0;
+		}
+	}
+
 }

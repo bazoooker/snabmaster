@@ -1,0 +1,16 @@
+.service-func {
+	list-style: none;
+	padding: 0;
+
+	li {
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.service-func {
+		li {
+			text-align: center;			
+		}
+	}	
+}
