@@ -1,0 +1,9 @@
+.cabinet {
+	@include flex-row(nowrap, space-between, stretch);
+}
+
+@media screen and (max-width: 768px) {
+	.cabinet {
+		@include flex-row(wrap, space-between, stretch);
+	}
+}

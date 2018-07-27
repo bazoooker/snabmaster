@@ -1,4 +1,6 @@
 .page-header {
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 .page-header__top-bar {
@@ -18,9 +20,15 @@
 
 	.btn-burger {
 		display: none;
+		position: absolute;
+	    left: 0;
+	    top: 0;
+	    width: 4.5rem;
+	    height: 4rem;
+	    background-color: #3c3b3b;
 
 		.btn-burger__bar {
-			background-color: black;
+			background-color: rgba(255,255,255,.8);
 		}
 	}
 }
@@ -66,6 +74,13 @@
 	}
 }
 
+@media screen and (max-width: 992px) {
+	.page-header__content {
+		padding: 3.1rem 0 3.1rem 0;
+	}
+}
+
+
 @media screen and (max-width: 699px) {
 	.page-header__content {
 		.container {
@@ -100,7 +115,7 @@
 	}
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 	.page-header__top-bar {
 		.nav  {
 			display: none;

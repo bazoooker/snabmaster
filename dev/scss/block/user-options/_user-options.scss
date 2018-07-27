@@ -102,3 +102,56 @@
 .user-options__signup {
 	padding: 1.2rem .9rem 1.2rem .9rem;
 }
+
+	.authorization {
+		.user-options {
+			@include flex-row(wrap, space-between, flex-start);
+
+			padding: 4rem 0 0 0;
+    		border-top: 1px solid gainsboro;		
+		}
+		.user-table-note {
+			font-size: 1.3rem;
+    		color: #949393;
+		}
+	}
+
+
+@media screen and (max-width: 768px) {
+	.authorization {
+		.user-options {
+
+			.registration-item {
+				flex: 1 1 45%;		
+			}
+			
+
+			.reminder-item {
+				flex: 1 1 45%;
+
+				text-align: right;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 413px) {
+	.authorization {
+		.user-options {
+
+			.registration-item {
+				flex: 1 1 100%;	
+				
+				text-align: center;	
+			}
+			
+
+			.reminder-item {
+				flex: 1 1 100%;
+				margin: 2rem 0 0 0;
+
+				text-align: center;
+			}
+		}
+	}
+}

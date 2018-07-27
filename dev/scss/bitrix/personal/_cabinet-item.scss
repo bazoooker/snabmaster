@@ -1,0 +1,58 @@
+.cabinet-item {
+	flex: 1 1 30%;
+	margin: 0 2rem 0 0;
+
+	background-position: 1.5rem center;
+	background-size: 3rem;
+	background-repeat: no-repeat;
+
+	transition: $tr;
+
+
+	&:first-child { 
+		background-image: url(/img/icons/i-list_gray.png);
+		&:hover {
+			background-image: url(/img/icons/i-list_darkgray.png);
+		}
+	}
+	&:nth-child(2) { 
+		background-image: url(/img/icons/i-person_gray.png);
+		&:hover {
+			background-image: url(/img/icons/i-person_darkgray.png);
+		}
+	}
+	&:last-child { 
+		margin: 0 0 0 0; 
+		background-image: url(/img/icons/i-cart_gray.png);
+		&:hover {
+			background-image: url(/img/icons/i-cart_darkgray.png);
+		}
+	}
+
+	a {
+	    display: block;
+		padding: 2rem 2rem 2rem 5.5rem;
+
+		background-color: transparent;
+	    border: 2px solid #e3e3e3;
+		
+		font-size: 1.8rem;
+		text-decoration: none;
+	    color: #323232;
+
+	    transition: $tr;
+
+	    &:hover {
+	    	// background-color: #e3e3e3;
+	    	border: 2px solid #3e3d3d;
+    		color: #3e3d3d;
+	    }
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.cabinet-item {
+		flex: 1 1 100%;
+		margin: 0 0 2rem;
+	}
+}

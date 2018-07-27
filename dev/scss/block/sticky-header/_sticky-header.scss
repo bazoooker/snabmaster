@@ -73,3 +73,11 @@
 	    background-color: $color_main;
 	}
 }
+
+@media screen and (max-width: 667px) {
+	.sticky-header {
+		.basket {
+			display: none;
+		}
+	}
+}

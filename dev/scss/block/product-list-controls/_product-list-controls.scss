@@ -1,4 +1,11 @@
 .product-list-controls {
 	@include flex-row(nowrap, space-between, center);
-	margin: 0 0 2rem 0;
+	margin: -1rem 0 2rem 0;
+}
+
+@media screen and (max-width: 699px) {
+	.product-list-controls {
+		@include flex-row(wrap, space-between, center);
+		margin: -1rem 0 4rem 0;
+	}
 }

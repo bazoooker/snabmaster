@@ -5,3 +5,38 @@
 	margin: 0 2rem 0 0;
 	// padding: 3rem 2.5rem 3rem 2.5rem;
 }
+
+@media screen and (max-width: 992px) {
+	.sidebar {
+		float: none;
+		width: 100%;
+		@include flex-row(wrap, space-between, center);
+		
+		.filters {
+			margin-right: 2%;
+		}
+		.filters,
+		.product_fake {
+			flex: 0 1 48%;
+    		max-width: 48%;
+		}
+	}
+}
+
+@media screen and (max-width: 699px) {
+	.sidebar {
+		float: none;
+		flex: 1 1 100%;
+		@include flex-row(wrap, space-between, center);
+		
+		.filters {
+			max-width: 100%;
+			flex: 1 1 100%;
+			margin-right: 0;
+		}
+		.product_fake {
+			display: none;
+
+		}
+	}
+}

@@ -13,6 +13,7 @@
 // page template
 @import "block/page-template/page-header";
 @import "block/page-template/page-footer";
+@import "block/page-template/page-basket";
 @import "block/page-template/page-wrapper";
 @import "block/page-template/page-content";
 @import "block/inner-page-header/inner-page-header";
@@ -64,6 +65,7 @@
 @import "block/swiper/swiper";
 @import "block/swiper/slide-category";
 @import "block/category/category";
+@import "block/category-list/category-list";
 @import "block/catalog-slider/catalog-slider";
 
 @import "block/brands-slider/brands-slider";
@@ -157,4 +159,20 @@
 
 // accordeon
 // @import "block/accordeon/accordeon";
+
+
+
+
+
+
+
+
+// BITRIX PERSONAL SECTION
+
+@import "bitrix/personal/cabinet";
+@import "bitrix/personal/cabinet-item";
+@import "bitrix/personal/form-control";
+@import "bitrix/compare";
+
+@import "bitrix/personal/cart";
 

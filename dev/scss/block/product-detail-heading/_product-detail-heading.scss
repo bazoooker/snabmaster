@@ -1,6 +1,22 @@
 .product-detail-heading {
 	@include flex-row(nowrap,space-between, center);
 	margin: 0 0 2.5rem 0;
+
+	.user-options__link {
+		font-size: 1rem;
+	    font-weight: 600;
+	    text-transform: uppercase;
+	    color: #514f53;
+	    letter-spacing: .8px;
+
+	    &:hover {
+	    	color: $color_main;
+	    }
+
+	    &::before {
+	    	left: 0;
+	    }
+	}
 }
 .product-detail-heading__main-info {
 	flex: 1 1 60%;

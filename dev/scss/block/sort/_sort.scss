@@ -34,3 +34,9 @@
 		}
 	}
 }
+
+@media screen and (max-width: 699px) {
+	.sort {
+		flex: 1 1 100%;
+	}
+}

@@ -43,3 +43,10 @@
 		color: #49474b;
 	}
 }
+
+
+@media screen and (max-width: 699px) {
+	.breadcrumbs {
+		flex: 1 1 100%;
+	}
+}

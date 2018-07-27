@@ -6,15 +6,59 @@
 	line-height: 1.5rem;
 	text-decoration: none;
 	font-weight: 600;
+	border-radius: 0 !important;
 	// background-color: $color_main-b;
-	padding: 1rem 1rem;
 	cursor: pointer;
 	
-	&:visited {
-	
+	&:active,
+	&:focus,
+	&.active {
+		box-shadow: 0 !important;
+	}
+}
+
+.btn_big {
+	font-size: 1.8rem;
+	line-height: 150%;
+	padding: 1rem 3rem 1rem 3rem !important	;
+}
+
+.btn_main {
+	background-color: $color_main;
+	padding: 1rem 1.5rem !important;
+	color: #fff;
+	transition: $tr;
+
+	&:hover {
+		background-color: lighten($color_main, 5%) !important;
+		color: #fff !important;
 	}
 
+	&:visited,
+	&:active,
+	&:focus {
+		color: #fff !important;
+	}
 }
+
+.btn_danger {
+	padding: 1rem 1.5rem !important;
+    color: #ef5b5b !important;
+    border: 2px solid #ffbebe !important;
+
+	&:visited,
+	&:active,
+	&:focus {
+		color: #fff;
+	}
+
+	&:hover {
+		background-color: #ffbebe;
+		color: #fff !important;
+	}
+}
+
+
 
 .btn_add-to-cart {
 	position: relative;
@@ -34,6 +78,7 @@
 
 	&:visited {color: $color_main;}
 	&:active {color: $color_main;}
+	&:focus {color: $color_main;}
 
 	&::before {
 		@include pseudo;
@@ -63,7 +108,7 @@
 	// }
 
 	&:hover {
-		background-color: $color_main;
+		background-color: $color_main !important;
 		color: #fff;
 	}
 
@@ -94,6 +139,7 @@
 
 	&:visited span {color: #514f53;}
 	&:active span {color: #514f53;}
+	&:focus span {color: #514f53;}
 
 
 	span {
@@ -134,6 +180,8 @@
 
 
 .btn_outline {
+	padding: 1rem 1.5rem !important;
+
 	background-color: transparent;
 	border: 2px solid #e3e3e3;
 	color: $color_font;
@@ -141,12 +189,13 @@
 	transition: $tr;
 
 	&:visited,
-	&:active {
+	&:active,
+	&:focus {
 		color: $color_font;
 	}
 
 	&:hover {
-		background-color: #e3e3e3;
+		background-color: #e3e3e3 !important;
 		color: #3e3d3d;
 	}
 
@@ -206,8 +255,9 @@
     font-weight: 400;
 
     &:visited,
-	&:active {
-		color: #fff;
+	&:active,
+	&:focus {
+		color: #fff !important;
 	}
 
     &:hover::after {
@@ -230,7 +280,15 @@
 
 @media screen and (max-width: 413px) {
 	.btn {
-		font-size: 1.2rem !important;
+		font-size: 1.1rem;
+		span {
+			font-size: 1.1rem;
+		}
+	}
+
+	.btn_add-to-cart {
+		padding: .4rem .4rem .4rem 4.5rem;
+		line-height: 190%;
 	}
 }
 

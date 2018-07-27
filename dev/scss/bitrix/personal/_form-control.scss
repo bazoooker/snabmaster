@@ -1,0 +1,58 @@
+// .form-control,
+// .bx-auth-input {
+//     border: 1px solid #e2e2e2;
+//     padding: .5rem 1rem;
+// }
+
+.bform {
+	.user-options {
+		padding: 4rem 0 0 0;
+    	border-top: 1px solid gainsboro;
+	}
+}
+
+.user-table input {
+    border: 1px solid #e2e2e2;
+    padding: .5rem 1rem;
+}
+
+.user-table {
+	margin: 2rem 0 3.5rem 0;
+}
+
+.personal-table,
+.form-table,
+.user-table {
+	tr {
+		&:hover {
+			td {
+				background-color: #efefef;
+			}
+		}
+
+		&:last-child:hover {
+			td {
+				background-color: transparent;
+			}
+		}
+		td {
+			border-bottom: 0;
+			padding: .5rem 1rem;
+    		font-size: 1.6rem;
+		}
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.personal-table,
+	.form-table,
+	.user-table {
+
+		tr {
+			td {
+				font-size: 1.3rem;
+			}
+		}
+
+	}
+}
