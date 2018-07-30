@@ -5,6 +5,8 @@ $window: 28rem;
     box-sizing: border-box;
     width: $window;
     height: 100%;
+    left: 0;
+    top: 0;
     // background-color: rgba(0, 0, 0, .9);
     background-color: #fff;
     // box-shadow: 0 0 15px 1px rgba(0,0,0,.8);
@@ -19,6 +21,10 @@ $window: 28rem;
     &.opened {
 		transform: translateX(0);
     	z-index: 9999;
+    }
+
+    .nav-left__heading {
+    	cursor: pointer;
     }
 
 }

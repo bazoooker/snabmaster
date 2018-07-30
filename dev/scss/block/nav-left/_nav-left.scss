@@ -27,7 +27,7 @@
     background-color: #2d2d2d;
 	background-color: rgba(0,0,0,.6);
 
-    cursor: pointer;
+    // cursor: pointer;
     text-decoration: none;
 
     &:visited,
@@ -35,9 +35,9 @@
         color: #fff;
     }
 
-    &:hover .btn-burger__bar::after {
-        width: 100%;
-    }
+    // &:hover .btn-burger__bar::after {
+    //     width: 100%;
+    // }
 }
 
 

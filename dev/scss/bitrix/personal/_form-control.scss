@@ -11,13 +11,19 @@
 	}
 }
 
-.user-table input {
-    border: 1px solid #e2e2e2;
-    padding: .5rem 1rem;
-}
+// .user-table input {
+//     border: 1px solid #e2e2e2;
+//     padding: .5rem 1rem;
+// }
 
 .user-table {
 	margin: 2rem 0 3.5rem 0;
+}
+
+.personal-table {
+	td {
+		width: 50%;
+	}
 }
 
 .personal-table,
@@ -40,6 +46,11 @@
 			padding: .5rem 1rem;
     		font-size: 1.6rem;
 		}
+	}
+
+	input {
+		border: 1px solid #e2e2e2;
+    	padding: .5rem 1rem;
 	}
 }
 

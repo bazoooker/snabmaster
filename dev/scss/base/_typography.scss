@@ -92,6 +92,38 @@ table tr {
     // }
 }
 
+.bx_catalog_compare_form {
+    margin: 0 0 2rem 0;
+    tr {
+        td {
+            border-bottom: 0;
+            a {
+                position: relative; 
+                font-size: 1.4rem;
+                text-decoration: none;
+                padding-left: 3rem;
+                display: inline-block;
+                margin: .3rem 0;
+
+                &::before {
+                    @include pseudo;
+                    left: 0;
+                    top: 50%;   
+                    transform: translateY(-50%);
+                    width: 1rem;
+                    height: 1rem;
+                    background-image: url(/img/icons/i-octagon.png);
+                    @include bg-contain;
+                }
+                
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
 ul {
     padding-left: 1.3rem;
     margin-left: 0;
